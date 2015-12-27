@@ -1,17 +1,29 @@
 #SASS - GULP
 Basic startup for a simple website based on **sass** (css preprocessor) and **gulp** (task manager).
 
+##Requirements
+
+You need **gulp** installed globaly: npm install -g gulp
+You need **bower** installed blobaly: npm install -g bower
+
+For quicker installation (installing gulp localy)
+You may install marked globaly: npm install -g marked
+you may install node-gyp globaly: npm install -g node-gyp
+
 ##Installation
 
 Run:
+    
+    bower install
+    This will install the jquery library
 
     npm install
+    This will install
 
-This will install
+        1. gulp and all the dependencies
+        2. bower
+        3. install jquery with bower
 
-1. gulp and all the dependencies
-2. bower
-3. install jquery with bower
 
 ##Tasks
 

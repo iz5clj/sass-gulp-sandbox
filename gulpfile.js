@@ -13,7 +13,7 @@ var config = {
 }
 
 var jsFiles = [
-  //config.bowerDir + '/jquery/dist/jquery.js',
+  config.bowerDir + '/jquery/dist/jquery.js',
   //config.bowerDir + '/motion-ui/dist/motion-ui.js',
   'resources/js/main.js'
 ]
