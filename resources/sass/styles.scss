@@ -1,5 +1,23 @@
 $myColor: #e6e6e6;
+$white: #fff;
+
+html, body {
+  height: 100%;
+}
 
 body {
   background-color: $myColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 600px;
+  border: solid 1px $white;
+  padding: 1em;
+
+  h1 {
+    border-bottom: solid 1px $white;
+  }
 }
