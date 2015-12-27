@@ -68,7 +68,7 @@ gulp.task('serve', ['sass', 'javascript'], function() {
         server: '.'
     });
 
-    gulp.watch("resources/sass/master.scss", ['sass']);
+    gulp.watch("resources/sass/**/*.scss", ['sass']);
     gulp.watch("resources/js/*.js", ['javascript']);
     gulp.watch("index.html").on('change', browserSync.reload);
 });

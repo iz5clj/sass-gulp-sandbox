@@ -4,10 +4,13 @@ Basic startup for a simple website based on **sass** (css preprocessor) and **gu
 ##Requirements
 
 You need **gulp** installed globaly: npm install -g gulp
-You need **bower** installed blobaly: npm install -g bower
+
+You need **bower** installed globaly: npm install -g bower
 
 For quicker installation (installing gulp localy)
+
 You may install marked globaly: npm install -g marked
+
 you may install node-gyp globaly: npm install -g node-gyp
 
 ##Installation
