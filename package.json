@@ -1,27 +1,28 @@
 {
-  "name": "sass-gulp-sandbox",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "name"        : "sass-gulp-sandbox",
+  "version"     : "1.0.0",
+  "description" : "",
+  "main"        : "gulpfile.js",
   "dependencies": {
-    "bower": "^1.7.1",
-    "browser-sync": "^2.10.1",
-    "gulp": "^3.9.0",
+    "bower"            : "^1.7.1",
+    "browser-sync"     : "^2.10.1",
+    "gulp"             : "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-debug": "^2.1.2",
-    "gulp-notify": "^2.2.0",
-    "gulp-sass": "^2.1.1",
-    "gulp-size": "^2.0.0"
+    "gulp-concat"      : "^2.6.0",
+    "gulp-debug"       : "^2.1.2",
+    "gulp-notify"      : "^2.2.0",
+    "gulp-sass"        : "^2.1.1",
+    "gulp-size"        : "^2.0.0"
   },
 
   "devDependencies": {},
 
   "scripts": {
-    "install": "bower install"
+    "preinstall": "clear",
+    "install"   : "bower install" //install = postinstall
   },
 
-  "author": "",
-  
+  "author": "Michel Sabatino",
+
   "license": "ISC"
 }

@@ -55,9 +55,9 @@ gulp.task('javascript', function() {
     //.pipe($.sourcemaps.init())
     .pipe(concat('main.js'))
     //.pipe(uglify)
-    .pipe(size({showFiles: true}))
     //.pipe($.if(!isProduction, $.sourcemaps.write()))
     .pipe(gulp.dest('js'))
+    .pipe(size({showFiles: true}))
     .pipe(browserSync.stream());
 });
 

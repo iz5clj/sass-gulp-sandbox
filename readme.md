@@ -7,40 +7,37 @@ You need **gulp** installed globaly: npm install -g gulp
 
 You need **bower** installed globaly: npm install -g bower
 
-For quicker installation (installing gulp localy)
+>Optional - For quicker installation (installing gulp localy)
 
-You may install marked globaly: npm install -g marked
+>You may install marked globaly: npm install -g marked
 
-you may install node-gyp globaly: npm install -g node-gyp
+>you may install node-gyp globaly: npm install -g node-gyp
 
 ##Installation
 
 Run:
     
-    bower install
-    This will install the jquery library
-
     npm install
-    This will install
+This command will do the following:
 
-        1. gulp and all the dependencies
-        2. bower
-        3. install jquery with bower
-
+1. Clear the screen
+2. Install gulp and all dependencies
+3. Install bower
+4. Run bower install
 
 ##Tasks
 
-1. To start the webserver:
+To start the webserver:
 
     gulp serve
 
-This will create the styles.css file, the main.js file and run the webserver in background.
+>This will create the styles.css file, the main.js file and run the webserver in background.
 
-2. To compile the sass files
+To compile the sass files
 
     gulp sass
 
-3. To concat all javascript files
+To concat all javascript files
 
     gulp javascript    
 
