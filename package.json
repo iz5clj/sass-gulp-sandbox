@@ -14,10 +14,14 @@
     "gulp-sass": "^2.1.1",
     "gulp-size": "^2.0.0"
   },
+
   "devDependencies": {},
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "bower install"
   },
+
   "author": "",
+  
   "license": "ISC"
 }
