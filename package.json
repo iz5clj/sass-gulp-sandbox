@@ -18,8 +18,7 @@
   "devDependencies": {},
 
   "scripts": {
-    "preinstall": "clear",
-    "install"   : "bower install" //install = postinstall
+    "install" : "bower install"
   },
 
   "author": "Michel Sabatino",
