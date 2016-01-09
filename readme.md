@@ -7,16 +7,10 @@ You need **gulp** installed globaly: npm install -g gulp
 
 You need **bower** installed globaly: npm install -g bower
 
->Optional - For quicker installation (installing gulp localy)
-
->You may install marked globaly: npm install -g marked
-
->you may install node-gyp globaly: npm install -g node-gyp
-
 ##Installation
 
 Run:
-    
+
     npm install
 This command will do the following:
 
@@ -45,4 +39,3 @@ To concat all javascript files
 ##TODO
 
 1. From a gulp task, check if jquery files exist in *bower_components* and if not run **bower install**
-
