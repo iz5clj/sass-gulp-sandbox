@@ -15,20 +15,20 @@ var config = {
 var jsFiles = [
   config.bowerDir + '/jquery/dist/jquery.js',
   //config.bowerDir + '/motion-ui/dist/motion-ui.js',
-  'resources/js/main.js'
+  'resources/assets/js/main.js'
 ]
 
 // Process sass files from resources/sass/styles.scss
 // Autoprefix
 gulp.task('sass', function () {
 
-  return gulp.src('resources/sass/styles.scss')
+  return gulp.src('resources/assets/sass/styles.scss')
     //.pipe(plumber())
     //.pipe($.sourcemaps.init())
     //.pipe(debug({title: 'sass files:'}))
-    .pipe(sass({ 
-      outputStyle: 'expanded', 
-      precision: 10, 
+    .pipe(sass({
+      outputStyle: 'expanded',
+      precision: 10,
       includePaths: [
         config.bowerDir + '/foundation-sites/scss',
         config.bowerDir + '/motion-ui/src',
@@ -40,7 +40,7 @@ gulp.task('sass', function () {
     .pipe(autoprefixer({browsers: ['last 2 versions']}))
     //.pipe(minifycss)
     //.pipe($.sourcemaps.write())
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest('public/assets/css/'))
     //.pipe(debug({title: 'css files:'}))
     .pipe(size({showFiles: true}))
     .pipe(browserSync.stream());
@@ -56,7 +56,7 @@ gulp.task('javascript', function() {
     .pipe(concat('main.js'))
     //.pipe(uglify)
     //.pipe($.if(!isProduction, $.sourcemaps.write()))
-    .pipe(gulp.dest('js'))
+    .pipe(gulp.dest('public/assets/js'))
     .pipe(size({showFiles: true}))
     .pipe(browserSync.stream());
 });
@@ -65,10 +65,10 @@ gulp.task('javascript', function() {
 gulp.task('serve', ['sass', 'javascript'], function() {
 
     browserSync.init({
-        server: '.'
+        server: 'public/'
     });
 
-    gulp.watch("resources/sass/**/*.scss", ['sass']);
-    gulp.watch("resources/js/*.js", ['javascript']);
-    gulp.watch("index.html").on('change', browserSync.reload);
+    gulp.watch("resources/assets/sass/**/*.scss", ['sass']);
+    gulp.watch("resources/assets/js/**/*.js", ['javascript']);
+    gulp.watch("resources/views/**/*.html").on('change', browserSync.reload);
 });
