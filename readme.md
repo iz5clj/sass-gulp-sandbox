@@ -1,25 +1,25 @@
-#SASS - GULP
+# SASS - GULP
 Basic startup for a simple website based on **sass** (css preprocessor) and **gulp** (task manager).
 
-##Requirements
+## Requirements
+I highly recommend using [nvm](https://github.com/creationix/nvm) (node version manager)
 
-You need **gulp** installed globaly: npm install -g gulp
+You need **gulp** to be installed globaly: [sudo]npm install -g gulp
 
-You need **bower** installed globaly: npm install -g bower
+You need **bower** to be installed globaly: [sudo]npm install -g bower
 
-##Installation
+## Installation
 
 Run:
 
     npm install
 This command will do the following:
 
-1. Clear the screen
-2. Install gulp and all dependencies
-3. Install bower
-4. Run bower install
+1. Install gulp and all dependencies
+2. Install bower
+3. Run bower install
 
-##Tasks
+## Tasks
 
 To start the webserver:
 
@@ -36,6 +36,6 @@ To concat all javascript files
     gulp javascript    
 
 
-##TODO
+## TODO
 
 1. From a gulp task, check if jquery files exist in *bower_components* and if not run **bower install**
